@@ -8,7 +8,9 @@
   </head>
   <body id = "body">
      <div id = "general"> 
-		  <form  id = "form1" runat="server" action="imageupload.php" method="post" enctype="multipart/form-data">
+      <form  id = "form1" runat="server" action="imageupload.php" method="post" enctype="multipart/form-data">
+        <!-- Limit size of uploaded files on the frontend e.g 5mb -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
     Select image to upload:
 	
 	<img id="image" alt="your image" width="200" height="200" />
